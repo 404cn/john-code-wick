@@ -4,6 +4,11 @@ import (
 	"errors"
 )
 
+var (
+	ErrEmpty      = errors.New("List is empty")
+	ErrOutOfRange = errors.New("List is out of range")
+)
+
 // 链表(Linked list): 是一种线性表, 但是并不会按线性的顺序存储数据, 而是在每一个
 // 节点里存到下一个节点的指针(Pointer).
 // 特点: 节点的链接方向是单向的; 相对于数组来说, 单向链表的随机访问速度慢, 但单向链表
@@ -51,11 +56,11 @@ func (l *List) Empty() bool {
 // 返回指定位置节点的数据, 从0开始
 func (l *List) ValueAt(index int) (interface{}, error) {
 	if l.Empty() {
-		return nil, errors.New("Can't find value, the list is empty.")
+		return nil, ErrEmpty
 	}
 
 	if index < 0 || index > l.Size() {
-		return nil, errors.New("Index out of list's range.")
+		return nil, ErrOutOfRange
 	}
 
 	for i := 0; i <= index; i++ {
@@ -83,8 +88,21 @@ func (l *List) PushFront(value interface{}) {
 }
 
 // return front item and return it's value
-func (l *List) PopFront() interface{} {
+func (l *List) PopFront() (interface{}, error) {
 	if l.Empty() {
-
+		return nil, ErrEmpty
 	}
+
+	node := l.Head.Next
+	l.Head.Next = node.Next
+	node.Next.Prev = l.Head
+
+	l.Length--
+
+	return node.Value, nil
+}
+
+// adds an item at the end
+func (l *List) PushBack(value interface{}) {
+
 }
