@@ -6,7 +6,7 @@ import (
 
 var (
 	ErrEmpty       = errors.New("List is empty")
-	ErrOutOfRange  = errors.New("List is out of range")
+	ErrBadIndex    = errors.New("List is out of range or index < 0")
 	ErrNodeNotExit = errors.New("Node not exit")
 )
 
@@ -16,12 +16,11 @@ var (
 // 删除/添加数据的效率很高.
 // Big O: 链表在插入时可以达到O(1), 但查找一个节点或者访问特定编号的节点需要O(n).
 
-// 双向循环链表
+// 带头节点的双向循环链表
 type List struct {
 	// length of linked list.
 	Length int
 	// point to linked list's next node.
-	// TODO Ptr is a better name?
 	Head *Node
 }
 
@@ -61,8 +60,8 @@ func (l *List) ValueAt(index int) (interface{}, error) {
 		return nil, ErrEmpty
 	}
 
-	if index < 0 || index > l.Size() {
-		return nil, ErrOutOfRange
+	if index < 0 || index > l.Size()-1 {
+		return nil, ErrBadIndex
 	}
 
 	p := l.Head
@@ -70,6 +69,7 @@ func (l *List) ValueAt(index int) (interface{}, error) {
 	for i := 0; i <= index; i++ {
 		p = p.Next
 	}
+
 	return p.Value, nil
 }
 
@@ -86,6 +86,7 @@ func (l *List) PushFront(value interface{}) {
 		node.Next = l.Head.Next.Next
 		node.Prev = l.Head
 		l.Head.Next = node
+		l.Head.Next.Next.Prev = node
 	}
 
 	l.Length++
@@ -137,47 +138,70 @@ func (l *List) PopBack() (interface{}, error) {
 	p.Prev.Next = l.Head
 	l.Head.Prev = p.Prev
 
+	l.Length--
+
 	return p.Value, nil
 }
 
 // get value of front item
 func (l *List) Front() (interface{}, error) {
-	if l.Empty() {
-		return nil, ErrEmpty
-	}
-	return l.Head.Next.Value, nil
+	return l.ValueAt(0)
 }
 
 // get value of end item
 func (l *List) Back() (interface{}, error) {
-	if l.Empty() {
-		return nil, ErrEmpty
+	return l.ValueAt(l.Length - 1)
+}
+
+// insert value at index, so current item at that index is pointed to by new item at index
+func (l *List) Insert(index int, value interface{}) error {
+	if index < 0 || index > l.Length {
+		return ErrBadIndex
+	}
+
+	switch index {
+	case 0:
+		l.PushFront(value)
+		return nil
+	case l.Length:
+		l.PushBack(value)
+		return nil
 	}
 
 	p := l.Head
-	for i := 0; i < l.Length; i++ {
+	for i := 0; i <= index; i++ {
 		p = p.Next
 	}
 
-	return p.Value, nil
-}
+	node := NewNode(value)
+	node.Prev = p
+	node.Next = p.Next
 
-// TODO return value
-// insert value at index, so current item at that index is pointed to by new item at index
-func (l *List) Insert(index int, value interface{})
+	p.Next.Prev = node
+	p.Next = node
+
+	l.Length++
+
+	return nil
+}
 
 // removes node at given index
 func (l *List) Erase(index int) error {
-	if l.Empty() {
-		return ErrEmpty
+	if index < 0 || index > l.Length-1 {
+		return ErrBadIndex
 	}
 
-	if index < 0 || index > l.Size() {
-		return ErrOutOfRange
+	switch index {
+	case 0:
+		l.PopFront()
+		return nil
+	case l.Length - 1:
+		l.PopBack()
+		return nil
 	}
 
 	p := l.Head
-	for i := 0; i < index; i++ {
+	for i := 0; i <= index; i++ {
 		p = p.Next
 	}
 
@@ -191,23 +215,23 @@ func (l *List) Erase(index int) error {
 
 // returns the value of the node at nth position from the end of the list
 func (l *List) ValueNFromEnd(n int) (interface{}, error) {
-	if l.Empty() {
-		return nil, ErrEmpty
-	}
-
-	index := l.Length - n + 1
-	p := l.Head
-
-	for i := 0; i < index; i++ {
-		p = p.Next
-	}
-
-	return p.Value, nil
+	return l.ValueAt(l.Length - n)
 }
 
-// TODO
 // reverses the list
-func (l *List) Reverse()
+func (l *List) Reverse() {
+	// reverse head node
+	node := l.Head.Next
+	l.Head.Next = l.Head.Prev
+	l.Head.Next = node
+
+	for i := 0; i < l.Length-1; i++ {
+		next := node.Next
+		node.Next = node.Prev
+		node.Prev = next
+		node = node.Next
+	}
+}
 
 // removes the first item in the list with this value
 func (l *List) RemoveValue(value interface{}) error {
@@ -222,6 +246,7 @@ func (l *List) RemoveValue(value interface{}) error {
 		if p.Value == value {
 			p.Prev.Next = p.Next
 			p.Next.Prev = p.Prev
+			l.Length--
 			return nil
 		}
 	}
