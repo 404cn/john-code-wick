@@ -38,43 +38,67 @@ func Splay(root, x *SplayTreeNode) {
 		zag(g)
 		zag(p)
 	} else if p == g.Left && x == p.Right {
-		zig(g)
 		zag(p)
+		zig(x)
 	} else if p == g.Right && x == g.Left {
-		zag(g)
 		zig(p)
+		zig(x)
 	}
+}
+
+// 右旋
+func zig(root *SplayTreeNode) {
+	if root == nil {
+		return
+	}
+
+	rLeft := root.Left
+	root.Left = rLeft.Right
+
+	if rLeft.Right != nil {
+		rLeft.Right.Parent = root
+	}
+
+	rLeft.Parent = root.Parent
+	// 如果传入的节点还有父节点
+	// 则需要调整父节点的指向
+	if root.Parent != nil {
+		if root == root.Parent.Left {
+			root.Parent.Left = rLeft
+		} else {
+			root.Parent.Right = rLeft
+		}
+	}
+	rLeft.Right = root
+	root.Parent = rLeft.Right
 
 }
 
 // 左旋转
-func zag(root *SplayTreeNode) *SplayTreeNode {
+func zag(root *SplayTreeNode) {
 	if root == nil {
-		return nil
+		return
 	}
 
-	r := root.Right
-	root.Right = r.Left
-	r.Left.Parent = root
-	r.Left = root
-	root.Parent = r.Left
+	rRight := root.Right
+	root.Right = rRight.Left
 
-	return r
-}
-
-// 右旋
-func zig(root *SplayTreeNode) *SplayTreeNode {
-	if root == nil {
-		return nil
+	if rRight.Left != nil {
+		rRight.Left.Parent = root
 	}
 
-	l := root.Left
-	root.Left = l.Right
-	l.Right.Parent = root.Left
-	l.Right = root
-	root.Parent = l.Right
+	rRight.Parent = root.Parent
+	if root.Parent != nil {
+		if root == root.Parent.Left {
+			root.Parent.Left = rRight
+		} else {
+			root.Parent.Right = rRight
+		}
+	}
 
-	return l
+	rRight.Left = root
+	root.Parent = rRight.Left
+
 }
 
 // Preorder 前序遍历
