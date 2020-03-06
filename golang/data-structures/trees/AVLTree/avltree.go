@@ -91,7 +91,7 @@ func Insert(root *AVLTreeNode, value Type) *AVLTreeNode {
 			} else {
 				root = RLRotation(root)
 			}
-		}
+		 }
 	}
 
 	root.Height = max(Height(root.Left), Height(root.Right)) + 1
