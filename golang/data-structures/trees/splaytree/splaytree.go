@@ -38,11 +38,11 @@ func Splay(root, x *SplayTreeNode) {
 		zag(g)
 		zag(p)
 	} else if p == g.Left && x == p.Right {
-		zag(p)
-		zig(x)
-	} else if p == g.Right && x == g.Left {
 		zig(p)
-		zig(x)
+		zag(g)
+	} else if p == g.Right && x == g.Left {
+		zag(p)
+		zig(g)
 	}
 }
 
