@@ -73,9 +73,11 @@ func zig(root *SplayTreeNode) {
 			root.Parent.Right = rLeft
 		}
 	}
-	rLeft.Right = root
-	root.Parent = rLeft.Right
 
+	if rLeft != nil {
+		rLeft.Right = root
+	}
+	root.Parent = rLeft.Right
 }
 
 // 左旋转
@@ -104,9 +106,10 @@ func zag(root *SplayTreeNode) {
 		}
 	}
 
-	rRight.Left = root
+	if rRight != nil {
+		rRight.Left = root
+	}
 	root.Parent = rRight.Left
-
 }
 
 // Preorder 前序遍历
