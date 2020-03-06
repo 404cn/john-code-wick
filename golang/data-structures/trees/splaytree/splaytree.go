@@ -53,13 +53,17 @@ func zig(root *SplayTreeNode) {
 	}
 
 	rLeft := root.Left
-	root.Left = rLeft.Right
 
-	if rLeft.Right != nil {
-		rLeft.Right.Parent = root
+	if rLeft != nil {
+		root.Left = rLeft.Right
+
+		if rLeft.Right != nil {
+			rLeft.Right.Parent = root
+		}
+
+		rLeft.Parent = root.Parent
 	}
 
-	rLeft.Parent = root.Parent
 	// 如果传入的节点还有父节点
 	// 则需要调整父节点的指向
 	if root.Parent != nil {
@@ -81,13 +85,17 @@ func zag(root *SplayTreeNode) {
 	}
 
 	rRight := root.Right
-	root.Right = rRight.Left
 
-	if rRight.Left != nil {
-		rRight.Left.Parent = root
+	if rRight != nil {
+		root.Right = rRight.Left
+
+		if rRight.Left != nil {
+			rRight.Left.Parent = root
+		}
+
+		rRight.Parent = root.Parent
 	}
 
-	rRight.Parent = root.Parent
 	if root.Parent != nil {
 		if root == root.Parent.Left {
 			root.Parent.Left = rRight
