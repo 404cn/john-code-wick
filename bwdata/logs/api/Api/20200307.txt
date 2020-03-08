@@ -1,0 +1,42 @@
+2020-03-07 00:00:00.006 +00:00 [Information] Starting job "AliveJob" at 03/07/2020 00:00:00.
+2020-03-07 00:00:00.020 +00:00 [Information] It's alive!
+2020-03-07 00:00:00.021 +00:00 [Information] Finished job "AliveJob" at 03/07/2020 00:00:00.
+2020-03-07 00:00:00.022 +00:00 [Information] Starting job "ValidateUsersJob" at 03/07/2020 00:00:00.
+2020-03-07 00:00:00.102 +00:00 [Information] Validating premium for 0 users.
+2020-03-07 00:00:00.103 +00:00 [Information] Finished job "ValidateUsersJob" at 03/07/2020 00:00:00.
+2020-03-07 00:30:00.002 +00:00 [Information] Starting job "ValidateOrganizationsJob" at 03/07/2020 00:30:00.
+2020-03-07 00:30:00.067 +00:00 [Information] Validating licenses for 0 organizations.
+2020-03-07 00:30:00.068 +00:00 [Information] Finished job "ValidateOrganizationsJob" at 03/07/2020 00:30:00.
+2020-03-07 01:00:00.002 +00:00 [Information] Starting job "AliveJob" at 03/07/2020 01:00:00.
+2020-03-07 01:00:00.006 +00:00 [Information] It's alive!
+2020-03-07 01:00:00.007 +00:00 [Information] Finished job "AliveJob" at 03/07/2020 01:00:00.
+2020-03-07 02:00:00.002 +00:00 [Information] Starting job "AliveJob" at 03/07/2020 02:00:00.
+2020-03-07 02:00:00.008 +00:00 [Information] It's alive!
+2020-03-07 02:00:00.009 +00:00 [Information] Finished job "AliveJob" at 03/07/2020 02:00:00.
+2020-03-07 03:00:00.003 +00:00 [Information] Starting job "AliveJob" at 03/07/2020 03:00:00.
+2020-03-07 03:00:00.006 +00:00 [Information] It's alive!
+2020-03-07 03:00:00.007 +00:00 [Information] Finished job "AliveJob" at 03/07/2020 03:00:00.
+2020-03-07 04:00:00.004 +00:00 [Information] Starting job "AliveJob" at 03/07/2020 04:00:00.
+2020-03-07 04:00:00.006 +00:00 [Information] It's alive!
+2020-03-07 04:00:00.008 +00:00 [Information] Finished job "AliveJob" at 03/07/2020 04:00:00.
+2020-03-07 05:00:00.002 +00:00 [Information] Starting job "AliveJob" at 03/07/2020 05:00:00.
+2020-03-07 05:00:00.008 +00:00 [Information] It's alive!
+2020-03-07 05:00:00.009 +00:00 [Information] Finished job "AliveJob" at 03/07/2020 05:00:00.
+2020-03-07 06:00:00.006 +00:00 [Information] Starting job "AliveJob" at 03/07/2020 06:00:00.
+2020-03-07 06:00:00.008 +00:00 [Information] Starting job "ValidateUsersJob" at 03/07/2020 06:00:00.
+2020-03-07 06:00:00.009 +00:00 [Information] It's alive!
+2020-03-07 06:00:00.011 +00:00 [Information] Finished job "AliveJob" at 03/07/2020 06:00:00.
+2020-03-07 06:00:00.015 +00:00 [Information] Validating premium for 0 users.
+2020-03-07 06:00:00.016 +00:00 [Information] Finished job "ValidateUsersJob" at 03/07/2020 06:00:00.
+2020-03-07 07:00:00.002 +00:00 [Information] Starting job "AliveJob" at 03/07/2020 07:00:00.
+2020-03-07 07:00:00.006 +00:00 [Information] It's alive!
+2020-03-07 07:00:00.008 +00:00 [Information] Finished job "AliveJob" at 03/07/2020 07:00:00.
+2020-03-07 08:00:00.005 +00:00 [Information] Starting job "AliveJob" at 03/07/2020 08:00:00.
+2020-03-07 08:00:00.009 +00:00 [Information] It's alive!
+2020-03-07 08:00:00.010 +00:00 [Information] Finished job "AliveJob" at 03/07/2020 08:00:00.
+2020-03-07 09:00:00.005 +00:00 [Information] Starting job "AliveJob" at 03/07/2020 09:00:00.
+2020-03-07 09:00:00.006 +00:00 [Information] It's alive!
+2020-03-07 09:00:00.008 +00:00 [Information] Finished job "AliveJob" at 03/07/2020 09:00:00.
+2020-03-07 10:00:00.003 +00:00 [Information] Starting job "AliveJob" at 03/07/2020 10:00:00.
+2020-03-07 10:00:00.008 +00:00 [Information] It's alive!
+2020-03-07 10:00:00.009 +00:00 [Information] Finished job "AliveJob" at 03/07/2020 10:00:00.
