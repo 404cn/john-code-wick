@@ -101,3 +101,15 @@
 2020-03-05 23:59:02.08 Backup      BACKUP DATABASE successfully processed 675 pages in 0.075 seconds (70.260 MB/sec).
 2020-03-06 23:59:01.35 Backup      Database backed up. Database: vault, creation date(time): 2020/03/04(11:19:41), pages dumped: 692, first LSN: 38:3944:53, last LSN: 39:32:1, number of dump devices: 1, device information: (FILE=1, TYPE=DISK: {'/etc/bitwarden/mssql/backups/vault_FULL_20200306_235900.BAK'}). This is an informational message only. No user action is required.
 2020-03-06 23:59:01.39 Backup      BACKUP DATABASE successfully processed 675 pages in 0.089 seconds (59.208 MB/sec).
+2020-03-07 23:59:01.79 spid56      Error: 18204, Severity: 16, State: 1.
+2020-03-07 23:59:01.79 spid56      BackupDiskFile::CreateMedia: Backup device '/etc/bitwarden/mssql/backups/vault_FULL_20200307_235901.BAK' failed to create. Operating system error 2(The system cannot find the file specified.).
+2020-03-07 23:59:01.80 Backup      Error: 3041, Severity: 16, State: 1.
+2020-03-07 23:59:01.80 Backup      BACKUP failed to complete the command BACKUP DATABASE vault. Check the backup application log for detailed messages.
+2020-03-08 23:59:01.35 spid53      Error: 18204, Severity: 16, State: 1.
+2020-03-08 23:59:01.35 spid53      BackupDiskFile::CreateMedia: Backup device '/etc/bitwarden/mssql/backups/vault_FULL_20200308_235901.BAK' failed to create. Operating system error 2(The system cannot find the file specified.).
+2020-03-08 23:59:01.36 Backup      Error: 3041, Severity: 16, State: 1.
+2020-03-08 23:59:01.36 Backup      BACKUP failed to complete the command BACKUP DATABASE vault. Check the backup application log for detailed messages.
+2020-03-09 23:59:01.54 spid52      Error: 18204, Severity: 16, State: 1.
+2020-03-09 23:59:01.54 spid52      BackupDiskFile::CreateMedia: Backup device '/etc/bitwarden/mssql/backups/vault_FULL_20200309_235901.BAK' failed to create. Operating system error 2(The system cannot find the file specified.).
+2020-03-09 23:59:01.56 Backup      Error: 3041, Severity: 16, State: 1.
+2020-03-09 23:59:01.56 Backup      BACKUP failed to complete the command BACKUP DATABASE vault. Check the backup application log for detailed messages.
