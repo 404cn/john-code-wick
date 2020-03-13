@@ -142,3 +142,291 @@ System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets
    at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
    at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
 2020-03-12 07:00:00.018 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 07:00:00.
+2020-03-12 08:05:31.604 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 08:05:31.
+2020-03-12 08:05:31.606 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 08:05:31.610 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 08:05:31.612 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 08:05:31.
+2020-03-12 09:00:00.004 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 09:00:00.
+2020-03-12 09:00:00.008 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 09:00:00.011 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 09:00:00.013 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 09:00:00.
+2020-03-12 10:00:00.004 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 10:00:00.
+2020-03-12 10:00:00.009 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 10:00:00.012 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 10:00:00.014 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 10:00:00.
+2020-03-12 11:00:00.001 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 11:00:00.
+2020-03-12 11:00:00.002 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 11:00:00.007 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 11:00:00.008 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 11:00:00.
+2020-03-12 12:00:00.003 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 12:00:00.
+2020-03-12 12:00:00.008 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 12:00:00.013 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 12:00:00.015 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 12:00:00.
+2020-03-12 13:00:00.004 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 13:00:00.
+2020-03-12 13:00:00.006 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 13:00:00.010 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 13:00:00.012 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 13:00:00.
+2020-03-12 14:00:00.003 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 14:00:00.
+2020-03-12 14:00:00.006 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 14:00:00.011 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 14:00:00.012 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 14:00:00.
+2020-03-12 15:00:00.002 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 15:00:00.
+2020-03-12 15:00:00.006 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 15:00:00.011 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 15:00:00.013 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 15:00:00.
+2020-03-12 16:00:00.005 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 16:00:00.
+2020-03-12 16:00:00.008 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 16:00:00.013 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 16:00:00.015 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 16:00:00.
+2020-03-12 17:00:00.010 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 17:00:00.
+2020-03-12 17:00:00.011 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 17:00:00.016 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 17:00:00.018 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 17:00:00.
+2020-03-12 18:35:21.218 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 18:35:21.
+2020-03-12 18:35:21.222 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 18:35:21.226 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 18:35:21.228 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 18:35:21.
+2020-03-12 19:00:00.002 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 19:00:00.
+2020-03-12 19:00:00.006 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 19:00:00.010 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 19:00:00.011 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 19:00:00.
+2020-03-12 20:00:00.002 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 20:00:00.
+2020-03-12 20:00:00.004 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 20:00:00.008 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 20:00:00.010 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 20:00:00.
+2020-03-12 21:00:00.005 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 21:00:00.
+2020-03-12 21:00:00.007 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 21:00:00.012 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 21:00:00.015 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 21:00:00.
+2020-03-12 22:00:00.007 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 22:00:00.
+2020-03-12 22:00:00.011 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 22:00:00.014 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 22:00:00.016 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 22:00:00.
+2020-03-12 23:00:00.001 +00:00 [Information] Starting job "AliveJob" at 03/12/2020 23:00:00.
+2020-03-12 23:00:00.004 +00:00 [Information] Execute job task: Keep alive
+2020-03-12 23:00:00.008 +00:00 [Error] Error performing "AliveJob".
+System.Net.Http.HttpRequestException: Connection refused ---> System.Net.Sockets.SocketException: Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Bit.Admin.Jobs.AliveJob.ExecuteJobAsync(IJobExecutionContext context) in /home/appveyor/projects/server/src/Admin/Jobs/AliveJob.cs:line 26
+   at Bit.Core.Jobs.BaseJob.Execute(IJobExecutionContext context) in /home/appveyor/projects/server/src/Core/Jobs/BaseJob.cs:line 21
+2020-03-12 23:00:00.010 +00:00 [Information] Finished job "AliveJob" at 03/12/2020 23:00:00.

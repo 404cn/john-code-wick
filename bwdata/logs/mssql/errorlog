@@ -121,3 +121,7 @@
 2020-03-11 23:59:01.80 spid52      BackupDiskFile::CreateMedia: Backup device '/etc/bitwarden/mssql/backups/vault_FULL_20200311_235901.BAK' failed to create. Operating system error 2(The system cannot find the file specified.).
 2020-03-11 23:59:01.81 Backup      Error: 3041, Severity: 16, State: 1.
 2020-03-11 23:59:01.81 Backup      BACKUP failed to complete the command BACKUP DATABASE vault. Check the backup application log for detailed messages.
+2020-03-12 23:59:02.09 spid52      Error: 18204, Severity: 16, State: 1.
+2020-03-12 23:59:02.09 spid52      BackupDiskFile::CreateMedia: Backup device '/etc/bitwarden/mssql/backups/vault_FULL_20200312_235901.BAK' failed to create. Operating system error 2(The system cannot find the file specified.).
+2020-03-12 23:59:02.10 Backup      Error: 3041, Severity: 16, State: 1.
+2020-03-12 23:59:02.10 Backup      BACKUP failed to complete the command BACKUP DATABASE vault. Check the backup application log for detailed messages.
