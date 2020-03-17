@@ -1,0 +1,14 @@
+2020-03-17 14:41:26.806 +00:00 [Warning] Stopping service.
+2020-03-17 14:41:31.659 +00:00 [Fatal] An error occurred stopping the application
+System.AggregateException: One or more errors occurred. (The operation was canceled.) ---> System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at Bit.Notifications.HeartbeatHostedService.StopAsync(CancellationToken cancellationToken) in /home/appveyor/projects/server/src/Notifications/HeartbeatHostedService.cs:line 46
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.StopAsync(CancellationToken token)
+---> (Inner Exception #0) System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at Bit.Notifications.HeartbeatHostedService.StopAsync(CancellationToken cancellationToken) in /home/appveyor/projects/server/src/Notifications/HeartbeatHostedService.cs:line 46
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
