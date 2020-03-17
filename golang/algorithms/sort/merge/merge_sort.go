@@ -37,3 +37,5 @@ func merge(left, right []int) []int {
 
 	return slice
 }
+
+// 稳定 time:O(nlogn) mem:O(n)
