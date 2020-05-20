@@ -4,6 +4,7 @@ import (
 	"testing"
 )
 
+
 func TestNewList(t *testing.T) {
 	list := NewList()
 	if list.Length != 0 || list.Head != nil {

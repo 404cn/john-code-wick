@@ -20,7 +20,7 @@ var (
 type List struct {
 	// length of linked list.
 	Length int
-	// point to linked list's next node.
+		// point to linked list's next node.
 	Head *Node
 }
 

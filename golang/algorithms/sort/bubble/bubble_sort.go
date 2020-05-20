@@ -1,4 +1,4 @@
-package bubble
+^package bubble
 
 // 冒泡排序,O(n方),稳定
 func bubble_sort(a []int) {
