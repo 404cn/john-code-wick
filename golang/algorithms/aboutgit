@@ -1,0 +1,23 @@
+git branch <bname> 创建分支
+git checkout <bname> 切换分支
+
+git merge <bname> 合并到bname分支
+git rebase <bname> 合并分支，可以创造线性的提交历史
+
+
+git checkout 可以改变HEAD
+^ 向上移动一个 “git checkout master^”
+~n 向上移动n个
+-f 强制移动 "git branch -f master HEAD~3"
+
+撤销改动
+git reset HEAD~1
+git revert HEAD 撤销更改并分享给别人
+
+整理提交树
+git cherry-pick <提交号>...
+git cherry-pick c2 c4 把c2，c4的修改合并到当前分支
+
+git rebase -i HEAD~4 (interactive)
+
+git tag v1 c1  (v1 version of branch c1)
